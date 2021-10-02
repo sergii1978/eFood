@@ -1,5 +1,6 @@
 body{
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  max-width: 1440px;
+  font-family: "Rubik", "DMSans", Arial, Helvetica, sans-serif;
   font‑display: swap;
   overflow-wrap: break-word;
 }
@@ -28,7 +29,6 @@ h1,h2,h3,h4 {
 
 h1 {
   font-size: 40px;
-  font-family: "Roboto";
   font-weight: 300;
   color: rgb(38, 47, 50);
   line-height: 1.444;
