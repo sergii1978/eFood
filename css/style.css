@@ -1,12 +1,22 @@
 body{
-  max-width: 1440px;
   font-family: "Rubik", "DMSans", Arial, Helvetica, sans-serif;
   font‑display: swap;
   overflow-wrap: break-word;
+  background-color: #F8F9FD;
 }
 
 * {
   box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1440px;
+}
+
+.container {
+  max-width: 1170px;
+  position: relative;
+  margin: 10px 0;;
 }
 
 .visually-hidden {
@@ -93,11 +103,11 @@ p {
 
 
 a, input, textarea {
-    font-size: 16.57px;
+    /* font-size: 16.57px;
     font-family: "Roboto";
     color: rgb(255, 255, 255);
     line-height: 1.931;
-    letter-spacing: 0.49px;  
+    letter-spacing: 0.49px;   */
 }
 
 a:not(.social_icon_link) {
