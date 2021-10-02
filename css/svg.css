@@ -1,0 +1,35 @@
+.social_icons_list {
+  display: flex;
+  justify-content: start;
+}
+
+.social_icon {
+  width: 45px;
+  height: 45px;
+  transition-duration: 500ms;
+  transition-property: fill;
+}
+
+.social_icon--tw {
+  fill: #00b4ff;
+}
+
+.social_icon--tw:hover {
+  fill: #ffffff;
+}
+
+.social_icon--fb {
+  fill: #345bb4;
+}
+
+.social_icon--fb:hover {
+  fill: #ffffff;
+}
+
+.social_icon--db {
+  fill: #e64895;
+}
+
+.social_icon--db:hover {
+  fill: #ffffff;
+}
