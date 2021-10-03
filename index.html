@@ -47,8 +47,12 @@
                 <!-- header -->
                 <header>
                     <section class="header-navigation">
-                        <div class="logo"></div>
-                        <div class="navigation">
+                        <div class="logo-wrapper">
+                            <a href="#" class="logo-link">
+                                E<span>Food</span>
+                            </a>
+                        </div>
+                        <div class="navigation-wrapper">
                             <nav>
                                 <ul class="menu-list">
                                     <li class="menu-item">
@@ -69,31 +73,65 @@
                         <div class="signup">
                             <ul class="signup-list">
                                 <li class="list-item">
-                                    <button type="submit"></button>
+                                    <button type="button" class="btn-search">
+                                        <svg class="logo" width="100" height="33">
+                                            <use xlink:href="svg/sprite_logo.svg#logo-brown"></use>
+                                        </svg>
+                                    </button>
                                 </li>
-                                <li class="list-item"></li>
+                                <li class="list-item list-item__basket">
+                                    <svg class="basket" width="100" height="33">
+                                        <use xlink:href="svg/sprite_logo.svg#logo-brown"></use>
+                                    </svg>
+                                </li>
                                 <li class="list-item">
-                                    <button>Sign Up</button>
+                                    <button type="button">Sign Up</button>
                                 </li>
                             </ul>
                         </div>
                     </section>
                     <section class="header-promo">
+                        <div class="section-wrappper">
+                            <div class="promo-text">
+                                <h1></h1>
+                                <p></p>
+                            </div>
+                            <div class="promo-img">
+                                <img src="img/scooter.png" alt="scooter_delivery">
+                            </div>
+                        </div>
 
                     </section>
                 </header>
 
                 <!-- main -->
                 <main>
-
+                    <section class="category">
+                        <figure>
+                            <img src="files/keks-1.jpg" width="486" height="315" alt="Кексик">
+                            <figcaption>Бдительный инструктор Кекс следит за порядком.</figcaption>
+                        </figure>
+                    </section>
+                    <section class="delivery"></section>
+                    <section class="restaurant"></section>
+                    <section class="mobile"></section>
+                    <section class="review"></section>
                 </main>
-
-                <!-- footer -->
-                <footer>
-    
-                </footer>
             </div>
+            <!-- footer -->
+            <footer>
+                <div class="container">
+                    <section class="form">
+                        <form action=""></form>
+                    </section>
+                    <section class="footer-navigation">
 
+                    </section>
+                </div>
+                <div class="legasy">
+
+                </div>
+            </footer>
         </div>
 
         <script src="js/jquery-3.6.0.min.js"></script>
