@@ -1,4 +1,4 @@
-.social_icons_list {
+/* .social_icons_list {
   display: flex;
   justify-content: start;
 }
@@ -32,4 +32,9 @@
 
 .social_icon--db:hover {
   fill: #ffffff;
+} */
+
+.icon_app { 
+  width: 135px; 
+  height: 40px;
 }
