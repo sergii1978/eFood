@@ -176,6 +176,15 @@ p {
   width: 100%;
 } */
 
+.signup {
+  flex-basis: 280px;
+}
+
+.signup-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 
 /* heder section header-promo */
 .project {

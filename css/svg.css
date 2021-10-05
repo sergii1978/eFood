@@ -34,7 +34,42 @@
   fill: #ffffff;
 } */
 
+.icon {
+  width: 19px;
+  height: 19px;
+}
+
 .icon_app { 
   width: 135px; 
   height: 40px;
+}
+
+.icon_menu { 
+  width: 44px; 
+  height: 44px;
+}
+
+.icon_arrow { 
+  width: 34px; 
+  height: 34px;
+}
+
+.icon_social { 
+  width: 21px; 
+  height: 21px;
+}
+
+.icon_call { 
+  width: 21px; 
+  height: 21px;
+}
+
+.quotes { 
+  width: 23px; 
+  height: 23px;
+}
+
+.icon_delivery { 
+  width: 41px; 
+  height: 41px;
 }
