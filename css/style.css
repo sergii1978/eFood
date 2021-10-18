@@ -1,4 +1,7 @@
 body{
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 55px;
   font-family: "Rubik", "DMSans", Arial, Helvetica, sans-serif;
   font‑display: swap;
   overflow-wrap: break-word;
@@ -17,7 +20,7 @@ body{
 
 .container {
   max-width: 1200px;
-  padding: 0 15px;
+  padding: 0 8px;
   margin: 0 auto;
 }
 
@@ -96,8 +99,11 @@ p {
 
 
 /* header */
-/* section header-navigation */
-.header-navigation {
+header {
+  margin-bottom: 100px;
+}
+
+.header-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -117,11 +123,8 @@ p {
   color: #363853;
 }
 
-.navigation-wrapper {
-  width: 445px;
-}
-
-.menu-list {
+.header-menu-list {
+  flex-basis: 445px;
   display: flex;
   justify-content: space-between;
 }
@@ -140,8 +143,8 @@ p {
   transition: 0.2s ease-in-out;
 }
 
-/* .menu-list a::after,
-.menu-list a::after {
+.header-menu-list a::after,
+.header-menu-list a::after {
   position: absolute;
   content: "";
   bottom: -4px;
@@ -153,8 +156,8 @@ p {
   transform: translateX(-50%);
 }
 
-.menu-list a::before,
-.menu-list a::before {
+.header-menu-list a::before,
+.header-menu-list a::before {
   position: absolute;
   content: "";
   bottom: 19px;
@@ -166,24 +169,61 @@ p {
   transform: translateX(-50%);
 }
 
-.menu-list a:hover::after,
-.menu-list a:hover::after {
+.header-menu-list a:hover::after,
+.header-menu-list a:hover::after {
   width: 100%;
 }
 
-.menu-list a:hover::before,
-.menu-list a:hover::before {
+.header-menu-list a:hover::before,
+.header-menu-list a:hover::before {
   width: 100%;
-} */
+}
 
-.signup {
+.user-menu-list {
+  display: flex;
   flex-basis: 280px; 
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.signup-list {
+/* section promo */
+.promo {
+  position: relative;
+}
+
+.promo .container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
+
+.promo-text {
+  max-width: 541px;
+  flex-shrink: 0;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 66px;
+  line-height: 78px;
+  text-transform: capitalize;
+  color: #363853;
+}
+
+h1 span {
+  color: #FF7A50;
+}
+
+.promo-img {
+  max-width: 640px;
+  height: auto;
+  margin: 0 auto;
+}
+
 
 
 /* heder section header-promo */
