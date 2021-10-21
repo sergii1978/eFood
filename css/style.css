@@ -134,6 +134,33 @@ header {
   flex-wrap: wrap;
 }
 
+.btn {
+  color: #ffffff;
+  background-color: #FF7A50;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-search {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.user-menu-list .btn {
+  width: 120px;
+  height: 50px;
+  border: 1px solid #FF7A50;
+  border-radius: 5px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 50px
+}
+
 /* section promo */
 .promo {
   position: relative;
