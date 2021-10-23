@@ -6,6 +6,10 @@ body{
   font‑display: swap;
   overflow-wrap: break-word;
   background-color: #E5E5E5;
+  background-image: url('../img/BG.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 * {
@@ -135,10 +139,43 @@ header {
 }
 
 .btn {
+  border: 1px solid #FF7A50;
   color: #ffffff;
   background-color: #FF7A50;
   text-align: center;
-  cursor: pointer;
+}
+
+.btn-cart {
+  position: relative;
+  width: 19px;
+  height: 18px;
+  border: none;
+  background-color: transparent;
+  color: #363853;
+}
+
+.btn-cart:before {
+  position: absolute;
+  left: 16px;
+  bottom: 8px;
+
+  display: block;
+  min-width: 14px;
+  min-height: 14px;
+  padding: 2px;
+
+  content: attr(data-count);
+  color: #ffffff;
+
+  background-color: #FF7A50;
+  border-radius: 50%;
+
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
 }
 
 .btn-search {
@@ -146,13 +183,26 @@ header {
   height: 24px;
   border: none;
   background-color: transparent;
+  color: #363853;
+}
+
+.btn:hover {
+  color: #FF7A50;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+
+.btn-search:hover,
+.btn-cart:hover {
   cursor: pointer;
 }
+
 
 .user-menu-list .btn {
   width: 120px;
   height: 50px;
-  border: 1px solid #FF7A50;
   border-radius: 5px;
   font-family: "Rubik";
   font-style: normal;
@@ -203,6 +253,26 @@ h1 span {
   color: #363853;
 }
 
+.promo-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 350px;
+}
+
+.promo-list-item {
+  margin: 10px auto;
+}
+
+.promo-list li:first-child {
+  margin-left: 0;
+}
+
+.promo-link {
+  padding: 14px 22px;
+  border-radius: 5px;
+}
+
 .promo-img {
   max-width: 640px;
   height: auto;
@@ -249,20 +319,24 @@ h1 span {
 
 .menu-btn {
   display: flex;
+  flex-shrink: 0;
+  flex-basis: 210px;
   justify-content: center;
   align-items: center;
+
+  max-width: 100%;
   margin: 10px 0;
   padding: 13px 0;
+
   font-family: "Rubik";
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 24px;
-  max-width: 100%;
-  flex-shrink: 0;
-  flex-basis: 210px;
+
   border: none;
   border-radius: 5px;
+  background-color: #ffffff;
 }
 
 .menu-btn:hover {

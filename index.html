@@ -38,6 +38,8 @@
         <!--Styles-->
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/svg.css">
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/slick-theme.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
 
@@ -74,9 +76,11 @@
                     </button>
                 </li>
                 <li class="user-list-item">
+                  <button type="button" class="btn-cart" data-count="4">
                     <svg class="icon">
                         <use xlink:href="img/svg/sprite_icons.svg#buy"></use>
                     </svg>
+                  </button>
                 </li>
                 <li class="list-item">
                     <button type="button" class="btn">Sign Up</button>
@@ -93,6 +97,10 @@
                   <div class="promo-text">
                       <h1>Super fast <span>Food delivery</span> service</h1>
                       <p>We provide super fast-delivery service. Let’s use our services right now and get discounts of up to 50%</p>
+                      <ul class="promo-list">
+                        <li class="promo-list-item"><a href="#" class="promo-link btn">Explore Food</a></li>
+                        <li class="promo-list-item"><a href="#mibile" class="promo-link btn">Download App</a></li>
+                      </ul>
                   </div>
                   <img class="promo-img" src="img/scooter_cr.png" alt="scooter_delivery" width="640" height="648">
               </div>
@@ -196,13 +204,31 @@
                   </svg><svg class="icon_arrow">
                     <use xlink:href="#arrow_right_rd"></use>
                   </svg>
+                  <div class="menu-slider responsive">
+                    <button></button>
+                    <button></button>
+                    <div class="slick-list">
+                      <div class="slider-item">your content</div>
+                      <div class="slider-item">your content</div>
+                      <div class="slider-item">your content</div>
+                      <div class="slider-item">your content</div>
+                      <div class="slider-item">your content</div>
+                    </div>
+                    <ul>
+                      <li><button></button></li>
+                      <li><button></button></li>
+                    </ul>
+
+                  </div>
             </section>
-            <section class="mobile">
-                <svg class="icon_app">
-                    <use xlink:href="#app_store"></use>
-                  </svg><svg class="icon_app">
-                    <use xlink:href="#google_play"></use>
-                  </svg>
+            <section class="mobile" id="mobile">
+              <div class="container">
+                <h2 class="section-heading">Our popular <span>Category</span></h2>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
+              </div>
             </section>
             <section class="review">
                 <svg class="quotes">
@@ -250,6 +276,7 @@
         </footer>
 
         <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/slick.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
