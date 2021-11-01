@@ -393,6 +393,16 @@ figure {
   text-align: center;
 }
 
+figcaption {
+font-family: "Rubik";
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 18px;
+
+color: #363853;
+}
+
 .rating-list {
   display: flex;
   justify-content: space-between;
@@ -401,8 +411,16 @@ figure {
 }
 
 .cards-item p {
-  margin: 10px auto;
+  margin: 0 auto 10px;
   text-align: center;
+
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+
+  color: #363853;
 }
 
 .card-btn {
@@ -416,4 +434,58 @@ figure {
   text-align: center;
 
   border-radius: 2px;
+}
+
+.slider-arrows {
+  display: flex;
+  align-items: center;
+  width: 210px;
+  margin: 40px auto 70px;
+}
+
+.slider-arrow {
+  display: block;
+  width: 34px;
+  height: 34px;
+  font-size: 25px;
+  text-align: center;
+  /* line-height: 34px; */
+  color: #D1D2DC;
+  background-color: transparent;
+  border-radius: 50%;
+  border-width: 2px;
+  border-color: none;
+}
+
+.slider-arrow:hover {
+  cursor: pointer;
+}
+
+.arrow-active {
+  color: #FF7A50;
+  border-color: #FF7A50;
+}
+
+.dots-list {
+  display: flex;
+  justify-content: space-between;
+  min-width: 90px;
+}
+
+.dot-item {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  border-radius: 50%;
+  opacity: 0.5; 
+}
+
+.dot-unactive {
+  background-color: #363853;
+}
+
+.dot-active {
+  background-color: #FF7A50;
+  opacity: 0.8;
 }
