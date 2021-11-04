@@ -520,6 +520,12 @@ color: #363853;
   margin: 0 auto;
 }
 
+.delivery-text h3 {
+  margin-bottom: 10px;
+  text-align: start;
+  line-height: 50px;
+}
+
 .delivery-text p {
   font-family: Rubik;
   font-style: normal;
@@ -533,6 +539,37 @@ color: #363853;
 .delivery-link {
   width: 176px;
   height: 58px;
+  line-height: 58px;
   box-shadow: 0px 22px 40px rgba(255, 104, 56, 0.19);
   border-radius: 30px 30px 1px 30px;
+}
+
+.delivery-list {
+  list-style: none;
+}
+
+.delivery-list li {
+  padding-left: 60px;
+
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 55px;
+  text-transform: capitalize;
+
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.delivery-item:nth-child(1) {
+  background-image: url("../img/svg/time.svg");
+}
+
+.delivery-item:nth-child(2) {
+  background-image: url("../img/svg/moto.svg");
+}
+
+.delivery-item:nth-child(3) {
+  background-image: url("../img/svg/restaurant.svg");
 }
