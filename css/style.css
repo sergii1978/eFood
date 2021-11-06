@@ -546,6 +546,7 @@ color: #363853;
 
 .delivery-list {
   list-style: none;
+  margin-bottom: 50px;
 }
 
 .delivery-list li {
