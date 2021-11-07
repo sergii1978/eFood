@@ -384,7 +384,7 @@ h1 span {
   border-radius: 12px;
 }
 
-figure {
+.cards-item figure {
   width: 210px;
   padding: 12px 16px 10px 16px;
   margin: 0;
@@ -401,7 +401,7 @@ figure {
   text-align: center;
 }
 
-figcaption {
+.cards-item figcaption {
 font-family: "Rubik";
 font-style: normal;
 font-weight: normal;
@@ -499,6 +499,10 @@ color: #363853;
 }
 
 /* section delivery */
+.delivery {
+  margin-bottom: 140px;
+}
+
 .delivery-wrap{
   display: flex;
   justify-content: space-between;
@@ -573,4 +577,100 @@ color: #363853;
 
 .delivery-item:nth-child(3) {
   background-image: url("../img/svg/restaurant.svg");
+}
+
+/* section restaurant */
+.restaurant-list {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-rows: auto;
+  column-gap: 43px;
+  justify-content: space-between;
+}
+
+.restaurant-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: center;
+  margin: 43px auto 0;
+  padding-bottom: 22px;
+  max-width: 360px;
+
+  background-color: #ffffff;
+
+  border-radius: 53px 5px;
+}
+
+.restaurant-item figure {
+  margin: 0;
+}
+
+.restaurant-item figcaption {
+  margin: 22px 0 14px 0;
+  padding-left: 20px;
+
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.restaurant-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.submit-block {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.submit-block p {
+  margin: 0 0 0 20px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 20px;
+  
+  opacity: 0.9;
+
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.submit-block p span {
+  padding-right: 8px;
+}
+
+/* .submit-block p::before {
+  background-image: url("/img/svg/submit-time.svg");
+} */
+
+.submit-btn {
+  width: 80px;
+  height: 33px;
+
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  box-shadow: 0px 5px 12px rgba(255, 104, 56, 0.19);
+  border-radius: 20px 20px 0px 20px;
+}
+
+.submit-btn img:hover {
+  color: #FF7A50;
 }
