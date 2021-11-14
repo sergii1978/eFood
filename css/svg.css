@@ -73,3 +73,13 @@
   width: 41px; 
   height: 41px;
 }
+
+.apps_icon:first-child {
+  width: 120px;
+  height: 40px;
+}
+
+.apps_icon:last-child {
+  width: 135px;
+  height: 40px;
+}
