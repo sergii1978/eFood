@@ -722,7 +722,19 @@ color: #363853;
   margin: 0 auto;
 }
 
-.app-list {
+.apps-list {
   display: flex;
   justify-content: flex-start;
+}
+
+.apps-item:first-child {
+  margin-right: 10px;
+}
+
+
+/* section review */
+.review-img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
