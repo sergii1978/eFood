@@ -421,7 +421,7 @@ color: #363853;
 }
 
 .cards-item p {
-  margin: 0 auto 10px;
+  margin: auto auto 10px;
   text-align: center;
 
   font-family: "Rubik";
@@ -499,6 +499,7 @@ color: #363853;
   background-color: #FF7A50;
   opacity: 0.8;
 }
+
 
 /* section delivery */
 .delivery {
@@ -580,7 +581,6 @@ color: #363853;
 .delivery-item:nth-child(3) {
   background-image: url("../img/svg/restaurant.svg");
 }
-
 
 
 /* section restaurant */
@@ -683,6 +683,7 @@ color: #363853;
   color: #FF7A50;
 }
 
+
 /* section mobile apps */
 .mobile h3 {
   text-align: left;
@@ -733,14 +734,29 @@ color: #363853;
 
 
 /* section review */
+.slider-wrap {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
 .review-img {
   max-width: 100%;
   height: auto;
-  margin: 0 auto;
+  margin: 0;
+  text-align: center;
+}
+
+.text-block {
+  max-width: 660px;
+
+  padding-top: 50px;
 }
 
 .review-text {
-  width: 573px;
+  position: relative;
+
+  max-width: 573px;
 
   font-family: "Rubik";
   font-style: normal;
@@ -749,7 +765,33 @@ color: #363853;
   line-height: 45px;
 
   letter-spacing: 0.5px;
-  }
+}
+
+.review-text::before,
+.review-text::after {
+  position: absolute;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 109px;
+  letter-spacing: 0.5px;
+
+  color: #DDDDDD;
+}
+
+.review-text::before {
+  content: '\201C';
+  top: -24px;
+  left: -40px;
+}
+  
+.review-text::after {
+  content: '\201D';
+  bottom: -70px;
+  right: -25px;
+}
 
 .review-cite {
   font-family: "Rubik";
@@ -769,16 +811,4 @@ color: #363853;
   line-height: 17px;
 
   color: #AAAAAA;
-}
-
-.review-text span {
-
-  font-family: Nunito;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 80px;
-  line-height: 109px;
-  letter-spacing: 0.5px;
-
-  color: #DDDDDD;
 }
