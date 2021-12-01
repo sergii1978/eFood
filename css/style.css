@@ -812,3 +812,8 @@ color: #363853;
 
   color: #AAAAAA;
 }
+
+.slider-arrows {
+  display: flex;
+  width: 110px;
+}
